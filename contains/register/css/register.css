@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input{ border:none; }
+img{display: block;}
+ul li{list-style:none;}
+body{font-family:"微软雅黑"}
+a{text-decoration:none;}
+
+/*register注册页面的样式设置*/   /*register注册页面的样式设置*/   /*register注册页面的样式设置*/
+/*register注册页面的样式设置*/   /*register注册页面的样式设置*/   /*register注册页面的样式设置*/
+.inputdiv .welcome{float:left;height:110px;width:123px;text-align:left;line-height:110px;
+font-size:20px;}
+.inputdiv .right{float:right;height:110px;line-height:160px;font-size:12px;margin-right:100px;}
+.register{height:563px;width:1021px;margin: 0 auto;padding-top:9px;
+	background:url(../img/register1.png) no-repeat top left;}
+		.register .register1{width:1000px;height:40px;border-bottom:2px solid #f9f9f9;
+		margin:10px auto 0;}
+			.register1 h2{color:#e42423;height:40px;width:174px;text-align:center;line-height:40px;
+			display:block;border-bottom:1px solid #e42423;margin:0 auto;font-weight:normal;}
+		.register .register2{height:435px;width:400px;margin:5px auto 0;background:#f9f9f9;
+		padding-top:20px;}
+			.register2 .register21{height:39px;width:400px;margin-top:10px;position:relative;}
+				/*register每个选项的提示信息的样式设置*/
+				.register2 .register21 .userfly{height:35px;width:116px;position:absolute;top:-55px;
+				left:158px;display:none;}
+				.register2 .register21 .passwardfly{height:35px;width:260px;position:absolute;top:-55px;
+				left:70px;display:none;}
+				.register2 .register21 .imgcheckfly{height:35px;width:90px;position:absolute;top:-55px;
+				left:10px;display:none;}
+				.register2 .register21 .newscheckfly{height:35px;width:114px;position:absolute;top:-55px;
+				left:10px;display:none;}
+					.register2 .register21 .friendcheckfly{height:35px;width:114px;position:absolute;top:-55px;
+				left:140px;display:none;}
+				
+				.register2 .register21 .regis1{height:39px;width:397px;border:1px solid #e6e6e6;
+				outline: medium;font-size:16px;color:#777}
+				.register2 .register21 .regis2{width:148px;height:36px;border:1px solid #e6e6e6;
+				outline: medium;font-size:16px;color:#666;}
+				.register2 .registerradio{font-size:12px;}
+				#registerread{color:red;}
+				.register2 .registerimg{width:400px;height:40px;}
+				.register2 .registerimg .regis2{float:left;}
+				.register2 .registerimg img{float:left;margin-left:18px;margin-right:10px;margin-top:5px;}
+				.register2 .registerimg a{width:112px;height:25px;font-size:14px;display:block;float:left;
+				margin-top:10px;}
+				.register2 .registercheck{width:400px;height:40px;}
+				.register2 .registercheck .regis2{float:left;}
+				.register2 .registercheck a{width:148px;height:40px;font-size:18px;display:block;float:left;
+				line-height:40px;text-align:center;margin-left:10px;}
+			.register2 .register25 .regis1{height:39px;width:399px;border:1px solid #f9f9f9;margin-top:20px;
+			background:#e02323;color:white;font-size:22px;display:block;line-height:39px;text-align:center;
+			color:#777}	
+		.register2 .reguser , .register2 .regpassward , .register2 .regimgcheck , .register2 .newsregcheck , .register2 .regfrinend{font-size:16px;color:red;width:390px;height:20px;}

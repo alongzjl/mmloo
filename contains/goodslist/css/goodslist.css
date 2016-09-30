@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img, input{ border:none; }
+img{display: block;}
+ul li{list-style:none;}
+body{font-family:"微软雅黑"}
+a{text-decoration:none;}
+
+/*     商品列表的样式设置   */          /*     商品列表的样式设置   */            /*     商品列表的样式设置   */
+/*     商品列表的样式设置   */     /*     商品列表的样式设置   */             /*     商品列表的样式设置   */
+	.shoploadlist{width:1220px;height:2430px;margin:0 auto;background:#fefefe;}
+	/*中间最上面的小标题购物指南样式设置*/
+	.shoploadlist .shopload1 p{height:41px;line-height:41px;font-size:12px;background:url(../img/shouye1.png) no-repeat center left;padding-left:20px;}
+		.shoploadlist .shopload1 p a{color:black;}
+		/*中间商品列表样式设置*/
+	.shoploadlist .goodslist{height:2280px;width:1220px;margin:0 auto;}
+		/*           中间商品列表中左边的图片的样式设置              */
+		.goodslist .goodslistleft{width:200px;height:1500px;float:left;margin-right:20px;}
+		/*           中间商品列表中左边的文字的样式设置              */
+			.goodslist .goodslistleft p{height:40px;width:188px;border:1px solid #d7d7d7;background:#f5f5f5;
+			font-size:14px;padding-left:10px;line-height:40px;margin-top:10px;}
+			/*           中间商品列表中右边的品牌的样式设置              */
+		.goodslist .goodslistright{width:1000px;height:2230px;float:left;}
+			.goodslistright .listright1{width:980px;height:72px;border-left:1px solid #d7d7d7;margin-bottom:12px;
+			border-right:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;border-top:2px solid #d93600;}
+				.goodslistright .listright1 p{height:35px;width:970px;background:#f5f5f5;font-size:14px;
+				padding-left:10px;line-height:40px;}
+				.goodslistright .listright1 h2{margin-left:55px;font-size:14px;margin-top:10px;}
+					.goodslistright .listright1 h2 a{font-weight:normal;color:#575ab4;}
+					/*           中间商品列表中右边的商品上面的选项那一栏的样式设置              */
+			.goodslistright .listright2{height:36px;;border:1px solid #d7d7d7;width:980px;margin-bottom:15px;
+			background:#f7f7f7;}
+			/*           中间商品列表中右边的选项左边排列方式的样式设置              */
+				.listright2 .listright2l{height:36px;width:308px;float:left;margin-right:40px;}
+					.listright2 .listright2l p{width:73px;height:36px;display:block;float:left;text-align:center;
+					line-height:36px;font-size:12px;border-right:1px solid #d7d7d7;}
+					.listright2 .listright2l ul{height:36px;230px;float:left;}
+						.listright2 .listright2l ul li{width:57px;height:36px;float:left;border-right:1px solid #d7d7d7;}
+							.listright2 .listright2l ul li a{color:black;font-size:12px;width:57px;height:36px;display:block;
+							text-align:center;line-height:36px;}
+							/*           中间商品列表中右边的选项中间商品类型的样式设置              */
+				.listright2 .listright2c{height:36px;width:287px;float:left;margin-right:60px;}
+					.listright2 .listright2c p{width:73px;height:36px;display:block;float:left;text-align:center;
+					line-height:36px;font-size:12px;}
+					.listright2 .listright2c ul{height:36px;230px;float:left;}
+						.listright2 .listright2c ul li{width:57px;height:36px;float:left;}
+							.listright2 .listright2c ul li a{color:black;font-size:12px;width:57px;height:36px;display:block;
+							text-align:center;line-height:36px;}
+							/*           中间商品列表中右边的选项右边商品所在地那一块的样式设置              */
+				.listright2 .listright2r{height:36px;width:280px;float:left;}
+					.listright2 .listright2r p{width:73px;height:36px;display:block;float:left;text-align:center;
+					line-height:36px;font-size:12px;}
+					.listright2 .listright2r ul{height:36px;230px;float:left;}
+						.listright2 .listright2r ul li{width:57px;height:20px;float:left;padding:8px 0;margin-left:10px;}
+							.listright2 .listright2r ul li a{color:black;font-size:12px;width:57px;height:20px;display:block;
+							text-align:center;line-height:20px;background:white;border:1px solid #e6e6e6;}
+			.goodslistright .listright3{width:1000px;}	
+				.listright3 ul{position:relative;width:1000px;}
+					/*           中间商品列表中每一个li的样式设置              */
+					.listright3 ul li{float:left;margin-right:18px;margin-bottom:14px;border:1px solid #f0f0f0;
+					height:335px;width:230px;background:white;overflow:hidden;}
+						/*           中间商品列表中每一个li中最上面的大图片的的样式设置              */
+						.listright3 ul li .listright3img{width:200px;height:220px;margin:0 10px;}
+							.listright3 ul li .listright3img img{width:200px;height:220px;}
+							/*           中间商品列表中每一个li中要上升运动的div的的样式设置              */
+							.listright3 ul li .listbottom{position:absolute;width:220px;height:235px;left:0;top:220px;}
+							/*           中间商品列表中每一个li中小图片的的样式设置              */
+						.listbottom .listsmallimg{height:30px;}
+							.listbottom .listsmallimg div{float:left;height:30px;width:30px;border:1px solid #f0f0f0;margin-left:10px;}
+								.listbottom .listsmallimg div a img{height:30px;width:30px;}
+							/*           中间商品列表中每一个li中商品介绍那一栏的的样式设置              */
+						.listbottom .listbottom1{height:50px;width:220px;margin-left:10px;margin-top:5px;}
+									.listbottom .listbottom1 p a{font-size:12px;margin-top:3px;color:#00549d;}
+							/*           中间商品列表中每一个li中价位那一栏的的样式设置              */	
+						.listbottom .listbottom2{height:34px;width:230px;}		
+								.listbottom .listbottom2 p{height:34px;width:123px;float:left;font-size:12px;color:#999;
+								margin-left:10px;margin-right:5px;}
+										.listbottom .listbottom2 p span{font-size:16px;color:red;}
+								.listbottom .listbottom2 img{height:16px;width:16px;float:left;}
+							/*           中间商品列表中每一个li中客服那一栏的的样式设置              */
+						.listbottom .listbottom3{height:50px;width:220px;border-top:1px solid #e6e6e6;}
+							.listbottom3 .listbottom3l{height:50px;width:60px;float:left;margin-left:10px;}
+								.listbottom3l a{text-align:center;font-size:12px;display:block;width:21px;height:21px;
+								margin:5px auto;line-height:21px;}
+								.listbottom3l p{text-align:center;font-size:12px;color:#999;}
+							.listbottom3 .listbottom3c{height:50px;width:70px;float:left;border-left:1px solid #e6e6e6;}
+								.listbottom3c a{display:block;width:21px;height:21px;margin:5px auto;}
+								
+								.listbottom3c p{text-align:center;font-size:12px;color:#999;}
+							.listbottom3 .listbottom3r{height:50px;width:60px;float:left;border-left:1px solid #e6e6e6;}
+								.listbottom3r a{display:block;width:21px;height:21px;margin:5px auto;}
+								.listbottom3r p{text-align:center;font-size:12px;color:#999;}
+							/*           中间商品列表中每一个li中商品的店址那一栏的样式设置              */
+						.listbottom .listbottom4{height:40px;width:225px;text-align:center;line-height:40px;
+						background:#f5f5f5;}
+							.listbottom4 a{color:#00549d;font-size:12px;}
+							/*           中间商品列表中每一个li中加入购物车那一栏的的样式设置              */
+						.listbottom .listbottom5{height:40px;width:220px;}
+							.listbottom5 a{color:#00549d;font-size:16px;color:#999;
+							height:40px;width:225px;display:block;text-align:center;line-height:40px;
+							background:#d93600 url(../img/gouwuchelogo.png) no-repeat 38px 8px;}
+							
+	/*中间最下面的翻页样式设置*/
+	.shoploadlist .shopload3 ul{margin-left:460px;}
+		.shoploadlist .shopload3 ul li{float:left;}
+		.shoploadlist .shopload3 ul li a{padding:10px 20px;color:black;border:1px solid #e6e6e6;font-size:12px;}
+		
+	/*购物车移动终点设置*/
+	.small{position:absolute;left:800px;top:0;width:1px;height:1px;}

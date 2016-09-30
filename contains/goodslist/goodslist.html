@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" type='text/css' href="css/goodslist.css" media="all" />
+		<link rel="stylesheet" type='text/css' href="../../samecss/samecss.css" />
+		<script type='text/javascript' src='../../jssame/jquery-1.11.3.js'></script>
+		<script type='text/javascript' src='js/jquery.fly.js'></script>
+		<script type='text/javascript' src='js/goodlist.js'></script>
+		<script type='text/javascript' src='js/requestAnimationFrame.js'></script>
+		<script type='text/javascript' src='js/goodslistorign.js'></script>
+		<script type='text/javascript' src='../../js/index.js'></script>
+		<script type='text/javascript' src='../../jssame/tool.js'></script>
+		<script type='text/javascript' src='../../jssame/jssame.js'></script>
+	</head>
+	<body>
+		<!--右侧固定导航栏-->
+		<div class="small"></div>
+		<div class="fixed">
+			<ul>
+				<li><a href='javascript:;' ></a></li>
+				<li><a href='javascript:;' ></a></li>
+				<li><a href='javascript:;' ></a></li>
+				<li><a href='javascript:;' ></a></li>
+				<li><a href='javascript:;' ></a></li>
+			</ul>
+		</div>
+		<!--header begin-->
+		<div class="header">
+			<div class="headerl layout1">
+				<div class="sub1">
+					您好：<span></span>&nbsp;欢迎来到米米乐商城<a href="javascript:;"></a>
+				</div>
+				<ul class="head_lead">
+					<li><a href="javascript:;" class='head_leada'>购物车<span id='headshopnum1'>0</span>件</a>
+						<div class="head_lead1">
+							<div class='head_lead11'><h5>最新加入的商品</h5></div>
+							<div class='head_lead12' id='head_lead12'>
+								
+							</div>
+							<div class='head_lead13' style='background:#CDCDCD;'>
+								<div class='lead111'><p>共<span id='headshopnum2'>0</span>件商品，总计金额:￥<span id='headshopprice'>0</span></p></div>
+								<div class='lead112'><a href='../shopcar/shopcar.html'><span>结算购物车中的商品</span></a></div>
+							</div>
+						</div>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>用户中心</a>
+							<a href="javascript:;" class='head_leada'>商店收藏</a>
+							<a href="javascript:;" class='head_leada'>店铺收藏</a>
+							<a href="javascript:;" class='head_leada'>收藏米米乐</a>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>我的订单</a>
+						<a href="../shopcar/shopcar.html" class='head_leada'>待付款订单</a>
+						<a href="javascript:;" class='head_leada'>待确认收货</a>
+						<a href="javascript:;" class='head_leada'>待评价交易</a>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>客户服务</a>
+						<a href="../shopinglead/shoppinglead.html" class='head_leada'>帮助中心</a>
+						<a href="javascript:;" class='head_leada'>售后服务</a>
+						<a href="javascript:;" class='head_leada'>客服中心</a>
+						<a href="javascript:;" class='head_leada'>在线客服</a>
+						<a href="javascript:;" class='head_leada'>QQ客服</a>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>网站导航</a>
+						<a href="javascript:;" class='head_leada'>导购频道</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--header over-->
+		
+		<!--headernews begin-->
+		<div class="headernews">
+			<div class="headernews1 layout1">
+				<div class='headerimg'><img src="img/headernews.png" alt="" /></div>
+			</div>
+		</div>
+		<!--header news over-->
+		
+		<!--inputdiv begin-->
+		<div class="inputdiv">
+			<div class="inputdivl"><img src="img/inputdivl.png" alt="" /></div>
+			<div class="inputdivc">
+				<div class="inputdivct">
+					<input id='inp1' type="text" />
+					<a href='javascript:;' id='but1'>搜索</a>
+				</div>
+				<ul class="inputdivcb">
+					<li><a href="javascript:;">iPhone7预定</a></li>
+					<li><a href="javascript:;">台湾美食</a></li>
+					<li><a href="javascript:;">8.8包邮</a></li>
+					<li><a href="javascript:;">中秋</a></li>
+					<li><a href="javascript:;">魅蓝</a></li>
+					<li><a href="javascript:;">iphone6</a></li>
+					<li><a href="javascript:;">酒饮</a></li>
+				</ul>
+			</div>
+			<div class="inputdivr">
+				<ul class="inputdivronly">
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+				</ul>
+			</div>
+		</div>
+	<!--inputdiv over-->
+	
+	<!--商品栏  begin-->
+<div class='goodsbig'>
+	<div class="goods layout1">
+		<div class="goodsl">
+			<a href="javascript:;" class='goodslfirst'>所有商品分类</a>
+			<div class='backgrl'>
+				<ul class="backgoods">
+					<li class='myli'><a  class='goodsa' href="javascript:;">手机/数码</a>
+						<div class="goodslistall">
+							<p><img src='img/phone.fw.png' />&nbsp;&nbsp;手机数码</p>
+							<div class="phone1">
+								<div><a href='javascript:;'>手机通讯</a></div>
+								<ul>
+									<li><a href="javascript:;">iphone</a></li>
+									<li><a href="javascript:;">三星</a></li>
+									<li><a href="javascript:;">小米</a></li>
+									<li><a href="javascript:;">魅族</a></li>
+									<li><a href="javascript:;">华为</a></li>
+									<li><a href="javascript:;">诺基亚</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>手机配件</a></div>
+								<ul>
+									<li><a href="javascript:;">贴膜</a></li>
+									<li><a href="javascript:;">手机保护壳</a></li>
+									<li><a href="javascript:;">电池</a></li>
+									<li><a href="javascript:;">手机耳机</a></li>
+									<li><a href="javascript:;">手机存储卡</a></li>
+									<li><a href="javascript:;">移动电源</a></li>
+									<li><a href="javascript:;">配件</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>摄影影像</a></div>
+								<ul>
+									<li><a href="javascript:;">单反相机</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>数码配件</a></div>
+								<ul>
+									<li><a href="javascript:;">闪光灯</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>服务产品</a></div>
+								<ul>
+									<li><a href="javascript:;">服务产品</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>智能设备</a></div>
+								<ul>
+									<li><a href="javascript:;">健康监测</a></li>
+									<li><a href="javascript:;">智能手表</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>影音娱乐</a></div>
+								<ul>
+									<li><a href="javascript:;">耳机耳麦</a></li>
+									<li><a href="javascript:;">音箱</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class='myli'><a  class='goodsa' href="javascript:;">电脑办公</a>
+						<div class="goodslistall">
+							<p><img src='img/phone.fw.png' />&nbsp;&nbsp;电脑办公</p>
+							<div class="phone1">
+								<div><a href='javascript:;'>电脑整机</a></div>
+								<ul>
+									<li><a href="javascript:;">电脑配件</a></li>
+									<li><a href="javascript:;">服务器/工作站</a></li>
+									<li><a href="javascript:;">显示器</a></li>
+									<li><a href="javascript:;">一体机</a></li>
+									<li><a href="javascript:;">台式机</a></li>
+									<li><a href="javascript:;">笔记本</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>平板电脑</a></div>
+								<ul>
+									<li><a href="javascript:;">IPAD</a></li>
+									<li><a href="javascript:;">surface</a></li>
+									<li><a href="javascript:;">国产平板</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>网络设备</a></div>
+								<ul>
+									<li><a href="javascript:;">3G上网</a></li>
+									<li><a href="javascript:;">路由器</a></li>
+									<li><a href="javascript:;">移动支付</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>办公设备</a></div>
+								<ul>
+									<li><a href="javascript:;">刷机卡</a></li>
+									<li><a href="javascript:;">打印机</a></li>
+									<li><a href="javascript:;">多功能一体机</a></li>
+									<li><a href="javascript:;">投影仪</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>外设产品</a></div>
+								<ul>
+									<li><a href="javascript:;">移动硬盘</a></li>
+									<li><a href="javascript:;">u盘</a></li>
+									<li><a href="javascript:;">电脑包</a></li>
+									<li><a href="javascript:;">包鼠套装</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>服务产品</a></div>
+								<ul>
+									<li><a href="javascript:;">上门服务</a></li>
+									<li><a href="javascript:;">远程服务</a></li>
+									<li><a href="javascript:;">电脑软件</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>办公耗材</a></div>
+								<ul>
+									<li><a href="javascript:;">硒鼓</a></li>
+									<li><a href="javascript:;">办公文具</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class='myli'>
+						<a  class='goodsa' href="javascript:;">食品/酒饮/生鲜/特产</a>
+						<div class="goodslistall">
+							<p><img src='img/phone.fw.png' />&nbsp;&nbsp;
+							食品酒饮</p>
+							<div class="phone1">
+								<div><a href='javascript:;'>进口食品</a></div>
+								<ul>
+									<li><a href="javascript:;">进口酒</a></li>
+									<li><a href="javascript:;">进口乳制品</a></li>
+									<li><a href="javascript:;">进口糖果</a></li>
+									<li><a href="javascript:;">进口零食</a></li>
+									<li><a href="javascript:;">进口粮油</a></li>
+									<li><a href="javascript:;">进口调料</a></li>
+									<li><a href="javascript:;">进口冲调</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>酒饮</a></div>
+								<ul>
+									<li><a href="javascript:;">白酒</a></li>
+									<li><a href="javascript:;">红酒</a></li>
+									<li><a href="javascript:;">矿泉水</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>粮油</a></div>
+								<ul>
+									<li><a href="javascript:;">米面粗粮</a></li>
+									<li><a href="javascript:;">罐头榨菜</a></li>
+									<li><a href="javascript:;">调味</a></li>
+									<li><a href="javascript:;">方便食品</a></li>
+									<li><a href="javascript:;">油</a></li>
+									<li><a href="javascript:;">有机绿色</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>休闲</a></div>
+								<ul>
+									<li><a href="javascript:;">膨化</a></li>
+									<li><a href="javascript:;">冲调</a></li>
+									<li><a href="javascript:;">糖果</a></li>
+									<li><a href="javascript:;">坚果</a></li>
+									<li><a href="javascript:;">蜜粘</a></li>
+									<li><a href="javascript:;">肉铺</a></li>
+									<li><a href="javascript:;">零食</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>茶叶</a></div>
+								<ul>
+									<li><a href="javascript:;">绿茶</a></li>
+									<li><a href="javascript:;">花草茶</a></li>
+									<li><a href="javascript:;">花果茶</a></li>
+									<li><a href="javascript:;">铁观音</a></li>
+									<li><a href="javascript:;">乌龙</a></li>
+									<li><a href="javascript:;">普洱</a></li>
+									<li><a href="javascript:;">红茶</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>特产</a></div>
+								<ul>
+									<li><a href="javascript:;">熟食特产</a></li>
+									<li><a href="javascript:;">干货特产</a></li>
+									<li><a href="javascript:;">腌腊特产</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>季节特色</a></div>
+								<ul>
+									<li><a href="javascript:;">月饼</a></li>
+									<li><a href="javascript:;">粽子</a></li>
+								</ul>
+							</div>
+							<div class="phone1">
+								<div><a href='javascript:;'>保健食品</a></div>
+								<ul>
+									<li><a href="javascript:;">保健品</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class='myli'><a  class='goodsa' href="javascript:;">服装/鞋帽/箱包</a></li>
+					<li class='myli'><a  class='goodsa' href="javascript:;">母婴/玩具</a></li>
+					<li class='myli'><a  class='goodsa' href="javascript:;">家居/生活/服务</a></li>
+					<li class='myli'><a  class='goodsa' href="javascript:;">个护美妆/清洁用品</a></li>
+					<li class='myli'><a  class='goodsa' href="javascript:;">家电用品</a></li>
+				</ul>
+			
+			</div>
+		</div>
+		
+		<ul class="goodsc">
+			<li class='goodsfirst'><a href="../../userindex.html">首页</a></li>
+			<li><a href="javascript:;">米活动</a></li>
+			<li><a href="javascript:;">乐社区</a></li>
+			<li><a href="javascript:;">商家入驻</a></li>
+			<li><a href="javascript:;">8.8天天抢</a></li>
+			<li><a href="javascript:;">团购</a></li>
+			<li><a href="javascript:;">米金融</a></li>
+		</ul>
+	</div>	
+</div>
+	<!--商品栏  over-->
+	<!--商品列表  begin-->
+	<div class="shoploadlist">
+		<div class="shopload1">
+			<p><a href="../../userindex.html">首页</a><span>&nbsp;>&nbsp;搜索结果</span></p>
+		</div>
+		<div class='goodslist'>
+			<div class="goodslistleft">
+				<a href='javascript:;'><img src="img/goodsleft1.jpg" alt="" /></a>
+				<p>最近浏览</p>
+			</div>
+			<div class="goodslistright">
+				<div class="listright1">
+					<p>商品筛选&nbsp;共<span>89</span>个商品</p>
+					<h2><span>品牌：</span>&nbsp;
+					<a href="javascript:;">联想</a>&nbsp;&nbsp;
+					<a href="javascript:;">THINKPAD</a>&nbsp;&nbsp;
+					<a href="javascript:;">COREL</a></h2>
+				</div>
+				<div class="listright2">
+					<div class="listright2l">
+						<p>排列方式：</p>
+						<ul>
+							<li><a href="javascript:;">默认</a></li>
+							<li><a href="javascript:;">销量</a></li>
+							<li><a href="javascript:;">人气</a></li>
+							<li><a href="javascript:;">价格</a></li>
+						</ul>
+					</div>
+					<div class="listright2c">
+						<p>商品类型:</p>
+						<ul>
+							<li><a href="javascript:;">全部</a></li>
+							<li><a href="javascript:;">商城自营</a></li>
+							<li><a href="javascript:;">商家加盟</a></li>
+						</ul>
+					</div>
+					<div class="listright2r">
+						<p>商品所在地:</p>
+						<ul>
+							<li><a href="javascript:;">不限地区</a></li>
+							<li><a href="javascript:;">上一页</a></li>
+							<li><a href="javascript:;">下一页</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="listright3" id='glist'>
+					<ul>
+							<!--商品列表  第一个商品-->
+						<li id='g1'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+							
+						</li>
+						<!--商品列表  第2个商品-->
+						<li id='g2'>
+							<div class="listright3img"><a href='../huipu/huipu.html'><img src="img/goodsright2_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright21.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright22.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright23.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright24.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright25.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='../huipu/huipu.html'>惠普（HP）24-g038cn 23.8英寸一体机电脑（i3-6100U 8G DDR4 7200转</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第3个商品-->
+						<li id="g3">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright3_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright31.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright32.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright33.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright34.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright35.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想（Lenovo）AIO-300 23英寸家用一体机电脑/aio 300 白色/A6-</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第4个商品-->
+						<li id="g4">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright4_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright41.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright42.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright31.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想（Lenovo）扬天S4105-00 21.5英寸商务一体机电脑 黑色/E1-</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第5个商品-->
+						<li id="g5">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想一体机电脑 C5030 i3-50058U 4G 1T 2G独显 23寸黑色联想C5030，,4G</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第6个商品-->
+						<li id="g6">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想（Lenovo） C360 19.5英寸一体机电脑（i3-4170T 4G 500G ）黑色 黑色</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第7个商品-->
+						<li id="g7">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想Lenovo C5030 I35005U4G1TGRW-10(W)(E)</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第8个商品-->
+						<li id="g8">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想台式一体机联想 C4005 四核A4-6210 4G 500G 21.5寸高清屏幕 强劲四</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第9个商品-->
+						<li id="g9">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>Lenovo/联想 C5030 I3-4005 4G/1T 2G独显 23寸一体机英特尔酷睿I3-4005双</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第10个商品-->
+						<li id='g10'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想 C4005 A4-7210 AMD四核 4G 500G 21.5英寸一体机高度集成一体</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第11个商品-->
+						<li id='g11'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第12个商品-->
+						<li id="g12">
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第13个商品-->
+						<li id='g13'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第14个商品-->
+						<li id='g14'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第15个商品-->
+						<li id='g15'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第16个商品-->
+						<li id='g16'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第17个商品-->
+						<li id='g17'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第18个商品-->
+						<li id='g18'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第19个商品-->
+						<li id='g19'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第20个商品-->
+						<li id='g20'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第21个商品-->
+						<li id='g21'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第22个商品-->
+						<li id='g22'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第23个商品-->
+						<li id='g23'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+						<!--商品列表  第24个商品-->
+						<li id='g24'>
+							<div class="listright3img"><a href='javascript:;'><img src="img/goodsright1_1.jpg" alt="" /></a></div>
+							<div class="listbottom">
+								<div class="listsmallimg">
+									<div class="listsmallimg1"><a href="javascript:;"><img src="img/goodsright11.jpg" alt="" /></a></div>
+									<div class="listsmallimg2"><a href="javascript:;"><img src="img/goodsright12.jpg" alt="" /></a></div>
+									<div class="listsmallimg3"><a href="javascript:;"><img src="img/goodsright13.jpg" alt="" /></a></div>
+									<div class="listsmallimg4"><a href="javascript:;"><img src="img/goodsright14.jpg" alt="" /></a></div>
+									<div class="listsmallimg5"><a href="javascript:;"><img src="img/goodsright15.jpg" alt="" /></a></div>
+								</div>
+								<div class="listbottom1">
+									<p><a href='javascript:;'>联想IdeaPad 300-15 N3150 4G 500G 1G独显15.6英寸笔记本 黑色 15.6英寸</a></p>
+								</div>
+								<div class="listbottom2">
+									<p><span>¥<em>2047.50</em></span>&nbsp;¥2150.00</p>
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+									<img src="img/star-on.png" alt="" />
+								</div>
+								<div class="listbottom3">
+									<div class="listbottom3l">
+										<a href="javascript:;">0</a>
+										<p>用户评论</p>
+									</div>
+									<div class="listbottom3c">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+									<div class="listbottom3r">
+										<a href="javascript:;"><img src="img/qq_index.gif" alt="" /></a>
+										<p>在线客服</p>
+									</div>
+								</div>
+								<div class="listbottom4">
+									<a href="javascript:;">成都瑞海电脑有限公司旗舰店</a>
+								</div>
+								<div class="listbottom5">
+									<a href="javascript:;">加入购物车</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="shopload3">
+			<ul>
+				<li><a href="javascript:;">首页</a></li>
+				<li><a href="javascript:;">上一页</a></li>
+				<li><a href="javascript:;">1</a></li>
+				<li><a href="javascript:;">2</a></li>
+				<li><a href="javascript:;">下一页</a></li>
+				<li><a href="javascript:;">末页</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--商品列表  over-->
+	
+	<!--bottom  start-->
+	<div class="bottom">
+		<div class="bot1 layout1">
+			<div class="bottom1">
+				<ul>
+					<h2>购物指南</h2>
+					<li><a href="javascript:;">礼品卡的购买与使用</a></li>
+					<li><a href="javascript:;">无法收到邮件？</a></li>
+					<li><a href="javascript:;">关于捷信分期</a></li>
+					<li><a href="javascript:;">邮费制度</a></li>
+					<li><a href="javascript:;">订单状态说明</a></li>
+				</ul>
+				<ul>
+					<h2>支付方式</h2>
+					<li><a href="javascript:;">支付问题</a></li>
+					<li><a href="javascript:;">在线支付</a></li>
+					<li><a href="javascript:;">货到付款</a></li>
+					<li><a href="javascript:;">营销推广</a></li>
+				</ul>
+				<ul>
+					<h2>配送与服务</h2>
+					<li><a href="javascript:;">申请售后退款说明</a></li>
+					<li><a href="javascript:;">取消订单退款说明</a></li>
+					<li><a href="javascript:;">装机与维修服务</a></li>
+					<li><a href="javascript:;">退换货流程</a></li>
+					<li><a href="javascript:;">第三方配送</a></li>
+				</ul>
+				<ul>
+					<h2>商家入驻</h2>
+					<li><a href="javascript:;">小米鸽（兼职招商专员）</a></li>
+					<li><a href="javascript:;"> 广告位管理与流程申报</a></li>
+					<li><a href="javascript:;">活动组织与流程申报</a></li>
+					<li><a href="javascript:;">如何发货</a></li>
+					<li><a href="javascript:;">我要开店</a></li>
+				</ul>
+			</div>
+			<div class="bottom2">
+				<div><h3>客服中心</h3></div>
+				<p class='bottomfirst'>4006-780-781</p>
+				<p>E-mail：mmloo@mmloo.com</p>
+				<p>四川省成都市新南路亚华大厦六楼</p>
+				<a href="javascript:;">4006780781</a>
+			</div>
+			<div class="bottom3">
+				<div><a href="javascript:;">关于米米乐商城</a></div>
+				<img src="img/bottom3.png" alt="" />
+				<p>手机下单更优惠   快乐网购 轻松拥有</p>
+			</div>
+		</div>
+	</div>
+	<!--bottom  over-->
+	
+	<div class="chengxin layout1">
+		<ul>
+			<li><a href="javascript:;">电脑节</a></li>
+			<li><a href="javascript:;">年货节</a></li>
+			<li><a href="javascript:;">批发商城</a></li>
+			<li><a href="javascript:;">合作及洽谈</a></li>
+			<li><a href="javascript:;">联系我们</a></li>
+			<li><a href="javascript:;">关于米米乐商城</a></li>
+			<li><a href="javascript:;">商家登录</a></li>
+			<li><a href="javascript:;">开店协议</a></li>
+			<li><a href="javascript:;">商家入驻</a></li>
+			<li><a href="javascript:;">手机版</a></li>
+			<li><a href="javascript:;">友情链接</a></li>
+			<li><a href="javascript:;">招聘英才</a></li>
+			<li><a href="javascript:;">米商</a></li>
+			<li><a href="javascript:;">8.8包邮</a></li>
+		</ul>
+		<div id='chengxinlast'><a href="javascript:;">返回顶部</a></div>
+		<div class='contat1'><p>© 2016 米米乐商城 www.mmloo.com 版权所有 蜀ICP备06015925号-1</p></div>
+		<div class='contat2'><img src="img/last.png" alt="" /></div>
+	</div>
+	</body>
+</html>

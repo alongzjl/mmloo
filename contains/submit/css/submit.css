@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img, input{ border:none; }
+img{display: block;}
+ul li{list-style:none;}
+body{font-family:"微软雅黑"}
+a{text-decoration:none;}
+
+/*submit登录页面的样式设置*/    /*submit登录页面的样式设置*/    /*submit登录页面的样式设置*/
+/*submit登录页面的样式设置*/     /*submit登录页面的样式设置*/    /*submit登录页面的样式设置*/
+
+.submitgo{height:380px;width:1200px;padding-top:30px;padding-bottom:30px;}
+.submitgo .imgs{margin-left:100px;float:left;}
+.submitgo .subright{width:400px;height:360px;float:left;border:1px solid #999999;margin-left:60px;
+margin-top:10px;background:#f9f9f9;}
+	.subright .subfirst {width:400px;height:45px;margin-left:20px;}
+		.subright .subfirst a{font-size:18px;color:black;height:45px;line-height:45px;font-weight:bolder;}
+	.subright .inp1{width:300px;height:40px;margin-left:30px;}
+		.inp1 dd input{width:240px;height:38px;background:#faffbd;float:left;
+		border-right:1px solid #e6e6e6;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;
+		border-left:none;outline: medium;color:#777;}
+		.inp1 dt {float:left;height:40px;width:40px;border-right:none;border-left:1px solid #e6e6e6;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+		.subright .userdanger,.subright .passwarddanger{height:20px;width:200px;margin-left:30px;
+		padding-left:50px;}
+		.subright .subload{height:30px;width:280px;margin-left:80px;}
+		.subright .subload .inp2{height:30px;width:97px;background:#f08300;color:white;text-align:center;
+	margin-top:20px;display:block;line-height:30px;float:left;margin-right:10px;}
+		.subright .subload .subfoget{height:30px;width:80px;display:block;float:left;line-height:30px;
+		text-align:center;margin-top:15px;color:#0066cc;}
+		
+	.subright .subp{height:35px;width:300px;margin-top:30px;border-bottom:1px dashed #666;padding-left:100px;
+	padding-bottom:5px;}
+		.subright .subp a{background:#fafafa;width:40px;height:30px;border:#c1c1c1 1px solid;color:black;display:block;text-align:center;line-height:30px;float:left;font-size:13px;}
+		.subright .subp p{height:30px;display:block;text-align:center;line-height:30px;width:135px;
+		float:left;font-size:13px;}
+	.subright .subbottom{margin-top:10px;width:280px;height:70px;padding-left:80px;}
+		.subright .subbottom p{font-size:13px;text-align:left;color:#777;}
+		.subright .subbottom a img{display:block;float:left;margin-top:10px;}
+			

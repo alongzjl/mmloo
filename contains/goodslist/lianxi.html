@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			ul{width:1050px;margin:10px auto;}
+			ul li{border:1px solid red; width:250px;height:350px;float:left;list-style:none;}
+			a{display:block;width:800px;height:50px;font-size:36px;text-align:center;}
+		</style>
+		<script type='text/javascript' src='../../jssame/jquery-1.11.3.js'></script>
+		
+	</head>
+	<body>
+		<ul></ul>
+		<a href='javascript:;'>加载更多</a>
+		<script>
+			(function(){
+				$.ajax({
+					type:'get',
+					url:'goodslist.json',
+					success:function(result){
+					//	console.log(result);
+					
+						$.each(result,function(index,data){
+							if(index<=7){
+									var li = $('<li>').append($('<img>').
+									attr('src',data.imgbig[0])).append($('<p>').
+							html(data.goodsname)).append($('<p>').html(data.price)).
+							append($('<p>').html(data.size)).append($('<button>').html(data.join));
+							li.appendTo($('ul'));
+							
+								li.click(function(){
+									$(this).css({border:'1px solid green',color:'red'}).
+									find('img').attr('src',data.imgbig[2]);
+								
+								});
+							}
+							$('a').click(function(){
+										if(index<=15&& index>7){
+										var li = $('<li>').append($('<img>').
+										attr('src',data.imgbig[0])).append($('<p>').
+								html(data.goodsname)).append($('<p>').html(data.price)).
+								append($('<p>').html(data.size)).append($('<button>').html(data.join));
+								li.appendTo($('ul'));
+								
+									li.click(function(){
+										$(this).css({border:'1px solid green',color:'red'}).
+										find('img').attr('src',data.imgbig[2]);
+									
+									});
+								}
+							});
+							
+						})
+						
+					}
+				});
+			})()
+		</script>
+	</body>
+</html>

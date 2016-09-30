@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img, input{ border:none; }
+img{display: block;}
+ul li{list-style:none;}
+body{font-family:"微软雅黑"}
+a{text-decoration:none;}
+
+/*     购物车的样式设置   */           /*     购物车的样式设置   */                       /*     购物车的样式设置   */
+/*     购物车的样式设置   */               /*     购物车的样式设置   */                      /*     购物车的样式设置   */
+.shopcarlogo{width:1000px;height:99px;border-top:1px solid #f0f0f0;margin:0 auto;border-bottom:1px solid #f0f0f0;}
+	.shopcarlogo .shopcarlogol{float:left;}
+	.shopcarlogo ul{width:644px;height:99px;float:right;}
+		.shopcarlogo ul li{height:99px;width:161px;float:left;}
+			.shopcarlogo ul li p{color:#ccc;font-size:16px;text-align:center;}
+			#first p{color:#27a9e3;}
+			
+	.shopcar{width:1000px;height:80px;margin:0 auto;}
+		.shopcar h2{font-weight:normal;margin-top:10px;}
+		.shopcar p{font-size:12px;margin-top:10px;color:#aaaabc;}
+		/*     购物车中间购物商品的样式   */
+	.shopcargoods{width:1000px;height:413px;height:auto!important;min-height:413px;
+	margin:0 auto;border-bottom:2px solid #aaa;position:relative;
+	border-top:2px solid #aaa;}
+		.shopcargoods .tab{width:1000px;margin:0 auto;}
+			.shopcargoods .tab tr{border:1px solid #999;}
+			.shopcargoods .tab tr th{height:56px;width:180px;text-align:center;font-size:12px;background:#f9f9f9;}
+			.shopcargoods .tab tr td{height:56px;width:180px;text-align:center;font-size:12px;}
+				.shopcargoods .tab tr td button{outline:medium;border:'none';background:'#fffdee';}
+				/*     总价的样式    */
+		.shopcargoods .priceall{height:56px;width:1000px;background:#f9f9f9;position:absolute;bottom:0;}
+			.shopcargoods .priceall{text-align:right;line-height:80px;}
+	.nextstep{height:83px;width:1000px;margin:0 auto;}
+		.nextstep a{display:block;height:33px;width:200px;line-height:33px;text-align:center;float:right;
+		margin-top:20px;background:#49afcd url(../img/gouwuche1.png) no-repeat center left;color:white;
+		font-size:14px;padding-left:20px;}
+		/*     购物车中下面的商品展示区的样式  */
+	.goodslistshow{height:320px;width:1000px;margin:0 auto;margin-bottom:20px;}
+		/*     ‘你可能要买’文字的样式   */
+			.goodslistshow .goodslistshowt{height:35px;width:1000px;border-bottom:#d93600 2px solid;}
+				.goodslistshow .goodslistshowt p{line-height:40px;font-size:14px;}
+		/*     图片展示列表的样式  */
+	.goodslistshow ul li{width:189px;height:260px;border-right:1px solid #AAAAAA;float:left;padding:5px;
+	position:relative;}
+			.goodslistshow ul li .showimgshop{margin:0 auto;margin-bottom:20px;}
+			.goodslistshow ul li p{margin:5px 0;position:absolute;top:143px;left:10px;}
+				.goodslistshow ul li p a{font-size:12px;color:#00549d;}
+			.goodslistshow ul li h2{color:#d93600;font-size:13px;text-align:center;line-height:30px;
+		position:absolute;top:183px;left:10px;font-weight:bolder;}
+			.goodslistshow ul li .showshoplast{display:block;width:160px;height:30px;color:white;font-size:16px;
+		line-height:30px;text-align:center;position:absolute;top:223px;left:10px;
+		background:#d93600 url(../img/gouwuchelogo.png) no-repeat 18px 2px;padding-left:20px;}
+		

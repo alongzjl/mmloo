@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input{ border:none; }
+img{display: block;}
+ul li{list-style:none;}
+body{font-family:"微软雅黑"}
+a{text-decoration:none;}
+
+/*购物指南的样式设置*/          /*购物指南的样式设置*/                   /*购物指南的样式设置*/
+/*购物指南的样式设置*/            /*购物指南的样式设置*/                    /*购物指南的样式设置*/
+
+
+
+.shopload{height:520px;width:1200px;margin:0 auto;}
+	/*中间最上面的小标题购物指南样式设置*/
+	.shopload .shopload1 p{height:41px;line-height:41px;font-size:12px;background:url(../img/shouye1.png) no-repeat center left;padding-left:20px;}
+		.shopload .shopload1 p a{color:black;}
+		/*中间最阅读内容样式设置*/
+	.shopload .shopload2{height:390px;width:1200px;margin-bottom:25px;}
+		.shopload2 .shoploadleft{height:389px;width:207px;float:left;margin-right:12px;}
+			.shoploadleft .shoploadleft1{width:207px;height:129px;margin-bottom:11px;
+			border:1px solid #e6e6e6;float:left;}
+			.shoploadleft .shoploadleft2{width:207px;height:185px;border:1px solid #e6e6e6;float:left;}
+				.shoploadleft1 p,.shoploadleft2 p{height:38px;width:192px;display:block;line-height:38px;
+				padding-left:15px;font-size:14px;background:#f5f5f5;}
+				.shoploadleft1 ul li{float:left;width:103px;height:25px;padding-top:5px;}
+					.shoploadleft1 ul li a{color:black;display:block;height:20px;width:90px;margin-left:6px;
+					text-align:center;font-size:12px;}
+				.shoploadleft2 ul li{width:197px;margin-top:6px;background:url(../img/shop11.png) no-repeat center left;padding-left:10px;margin-left:5px;}
+					.shoploadleft2 ul li a{color:black;font-size:12px;color:#00549d;}
+		.shopload2 .shoploadright{height:389px;width:938px;border:1px solid #e6e6e6;float:left;
+		padding:0 16px;}
+			.shoploadright p{height:38px;display:block;line-height:38px;
+				padding-left:15px;font-size:18px;border-bottom:1px solid #f5f5f5;}
+			.shoploadright ul li{background:url(../img/shop11.png) no-repeat center left;width:928px;height:32px;
+			padding-left:10px;}	
+				.shoploadright ul li a{float:left;color:black;font-size:12px;height:32px;line-height:32px;width:500px;
+				display:block;}
+				.shoploadright ul li span{float:right;font-size:12px;height:32px;line-height:32px;width:150px;
+				display:block;text-align:right;}
+	/*中间最下面的翻页样式设置*/
+	.shopload .shopload3 ul{margin-left:460px;}
+		.shopload .shopload3 ul li{float:left;}
+		.shopload .shopload3 ul li a{padding:10px 10px;color:black;border:1px solid #e6e6e6;font-size:12px;}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type='text/css' href="css/shopcar.css" media="all" />
+		<link rel="stylesheet" type='text/css' href="../../samecss/samecss.css" />
+		<script type='text/javascript' src='../../jssame/jquery-1.11.3.js'></script>
+		<script type='text/javascript' src='js/shopcar.js'></script>
+		<script type='text/javascript' src='../../js/index.js'></script>
+		<script type='text/javascript' src='../../jssame/tool.js'></script>
+		<script type='text/javascript' src='js/shopcarorign.js'></script>
+		<script type='text/javascript' src='../../jssame/jssame.js'></script>
+		
+	</head>
+	<body>
+		<!--header begin-->
+		<div class="header">
+			<div class="headerl layout1">
+				<div class="sub1">
+					您好：<span></span>&nbsp;欢迎来到米米乐商城<a href="javascript:;"></a>
+				</div>
+				<ul class="head_lead">
+					<li><a href="javascript:;" class='head_leada'>购物车<span id='headshopnum1'>0</span>件</a>
+						<div class="head_lead1">
+							<div class='head_lead11'><h5>最新加入的商品</h5></div>
+							<div class='head_lead12' id='head_lead12'>
+								
+							</div>
+							<div class='head_lead13' style='background:#CDCDCD'>
+								<div class='lead111'><p>共<span id='headshopnum2'>0</span>件商品，总计金额：￥<span id='headshopprice'>0</span></p></div>
+								<div class='lead112'><a href='shopcar.html'>结算购物车中的商品</a></div>
+							</div>
+						</div>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>用户中心</a>
+							<a href="javascript:;" class='head_leada'>商店收藏</a>
+							<a href="javascript:;" class='head_leada'>店铺收藏</a>
+							<a href="javascript:;" class='head_leada'>收藏米米乐</a>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>我的订单</a>
+						<a href="javascript:;" class='head_leada'>待付款订单</a>
+						<a href="javascript:;" class='head_leada'>待确认收货</a>
+						<a href="javascript:;" class='head_leada'>待评价交易</a>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>客户服务</a>
+						<a href="../shopinglead/shoppinglead.html" class='head_leada'>帮助中心</a>
+						<a href="javascript:;" class='head_leada'>售后服务</a>
+						<a href="javascript:;" class='head_leada'>客服中心</a>
+						<a href="javascript:;" class='head_leada'>在线客服</a>
+						<a href="javascript:;" class='head_leada'>QQ客服</a>
+					</li>
+					<li><a href="javascript:;" class='head_leada'>网站导航</a>
+						<a href="javascript:;" class='head_leada'>导购频道</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--header over-->
+		<div class="shopcarlogo">
+			<!--logo和右边的物流图片的布局-->
+			<div class="shopcarlogol"><img src="img/shopcarlogo.png" alt="" /></div>
+			<ul>
+				<li id='first'><img src="img/shopcar1.png" alt="" /><p>我的购物车</p></li>
+				<li><img src="img/shopcar2.png" alt="" /><p>填写核对购物信息</p></li>
+				<li><img src="img/shopcar3.png" alt="" /><p>支付提交</p></li>
+				<li><img src="img/shopcar4.png" alt="" /><p>订单完成</p></li>
+			</ul>
+		</div>
+		<!--购物车中的商品的布局-->
+		<div class="shopcar">
+			<h2>我的购物车</h2>
+			<p>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步</p>
+		</div>
+		<div class="shopcargoods">
+			<table class='tab''>
+				<thead>
+					<tr>
+						<th>商品</th>
+						<th>单价(元)</th>
+						<th>数量</th>
+						<th>小计</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody  id ='shoptbo'>
+					
+				</tbody>
+			</table>
+			<!--商品总价那一栏的布局-->
+			<div class="priceall">
+				<p>商品总价（不含运费）&nbsp;￥<span  id='pricelast'>0</span>元</p>
+			</div>
+		</div>
+		<!--下一步操作的那一栏的布局-->
+		<div class="nextstep">
+			<a href="javascript:;">下一步，填写核对购物信息</a>
+		</div>
+		
+		<!--商品展示图片的布局-->
+		<div class="goodslistshow">
+			<div class="goodslistshowt">
+				<p>你可能要买</p>
+			</div>
+			<ul>
+				<li id='car1'>
+					<a href='javacsript:;' class='showimgshop'><img src="img/shopcarlist1.png" alt="" /></a>
+					<p><a href='javacsript:;'>开心衣橱2016年最新款甜美中长款两件套只要99元</a></p>
+					<h2>￥<span>156.00</span></h2>
+					<a href="javascript:;" class='showshoplast'>添加到购物车</a>
+				</li>
+				<li id='car2'>
+					<a href='javacsript:;' class='showimgshop'><img src="img/shopcarlist2.png" alt="" /></a>
+					<p><a href='javacsript:;'>博洋家纺 床上用品两件套 超厚拉舍尔保暖床单四件套</a></p>
+					<h2>￥<span>1156.00</span></h2>
+					<a href="javascript:;" class='showshoplast'>添加到购物车</a>
+				</li>
+			<li id='car3'>
+					<a href='javacsript:;' class='showimgshop'><img src="img/shopcarlist3.png" alt="" /></a>
+					<p><a href='javacsript:;'>诺拉德移动电源</a></p>
+					<h2>￥<span>375.00</span></h2>
+					<a href="javascript:;" class='showshoplast'>添加到购物车</a>
+				</li>
+				<li id='car4'>
+					<a href='javacsript:;' class='showimgshop'><img src="img/shopcarlist4.png" alt="" /></a>
+					<p><a href='javacsript:;'>红胜无蔗糖黑米黑芝麻</a></p>
+					<h2>￥<span>229.00</span></h2>
+					<a href="javascript:;" class='showshoplast'>添加到购物车</a>
+				</li>
+				<li id=car5>
+					<a href='javacsript:;' class='showimgshop'><img src="img/shopcarlist5.png" alt="" /></a>
+					<p><a href='javacsript:;'>苹果iphone4s正品行货 白色出色的手机</a></p>
+					<h2>￥<span>1280.00<sapn></h2>
+					<a href="javascript:;" class='showshoplast'>添加到购物车</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!--bottom  start-->
+	<div class="bottom">
+		<div class="bot1 layout1">
+			<div class="bottom1">
+				<ul>
+					<h2>购物指南</h2>
+					<li><a href="javascript:;">礼品卡的购买与使用</a></li>
+					<li><a href="javascript:;">无法收到邮件？</a></li>
+					<li><a href="javascript:;">关于捷信分期</a></li>
+					<li><a href="javascript:;">邮费制度</a></li>
+					<li><a href="javascript:;">订单状态说明</a></li>
+				</ul>
+				<ul>
+					<h2>支付方式</h2>
+					<li><a href="javascript:;">支付问题</a></li>
+					<li><a href="javascript:;">在线支付</a></li>
+					<li><a href="javascript:;">货到付款</a></li>
+					<li><a href="javascript:;">营销推广</a></li>
+				</ul>
+				<ul>
+					<h2>配送与服务</h2>
+					<li><a href="javascript:;">申请售后退款说明</a></li>
+					<li><a href="javascript:;">取消订单退款说明</a></li>
+					<li><a href="javascript:;">装机与维修服务</a></li>
+					<li><a href="javascript:;">退换货流程</a></li>
+					<li><a href="javascript:;">第三方配送</a></li>
+				</ul>
+				<ul>
+					<h2>商家入驻</h2>
+					<li><a href="javascript:;">小米鸽（兼职招商专员）</a></li>
+					<li><a href="javascript:;"> 广告位管理与流程申报</a></li>
+					<li><a href="javascript:;">活动组织与流程申报</a></li>
+					<li><a href="javascript:;">如何发货</a></li>
+					<li><a href="javascript:;">我要开店</a></li>
+				</ul>
+			</div>
+			<div class="bottom2">
+				<div><h3>客服中心</h3></div>
+				<p class='bottomfirst'>4006-780-781</p>
+				<p>E-mail：mmloo@mmloo.com</p>
+				<p>四川省成都市新南路亚华大厦六楼</p>
+				<a href="javascript:;">4006780781</a>
+			</div>
+			<div class="bottom3">
+				<div><a href="javascript:;">关于米米乐商城</a></div>
+				<img src="img/bottom3.png" alt="" />
+				<p>手机下单更优惠   快乐网购 轻松拥有</p>
+			</div>
+		</div>
+	</div>
+	<!--bottom  over-->
+	
+	<div class="chengxin layout1">
+		<ul>
+			<li><a href="javascript:;">电脑节</a></li>
+			<li><a href="javascript:;">年货节</a></li>
+			<li><a href="javascript:;">批发商城</a></li>
+			<li><a href="javascript:;">合作及洽谈</a></li>
+			<li><a href="javascript:;">联系我们</a></li>
+			<li><a href="javascript:;">关于米米乐商城</a></li>
+			<li><a href="javascript:;">商家登录</a></li>
+			<li><a href="javascript:;">开店协议</a></li>
+			<li><a href="javascript:;">商家入驻</a></li>
+			<li><a href="javascript:;">手机版</a></li>
+			<li><a href="javascript:;">友情链接</a></li>
+			<li><a href="javascript:;">招聘英才</a></li>
+			<li><a href="javascript:;">米商</a></li>
+			<li><a href="javascript:;">8.8包邮</a></li>
+		</ul>
+		<div id='chengxinlast'><a href="javascript:;">返回顶部</a></div>
+		<div class='contat1'><p>© 2016 米米乐商城 www.mmloo.com 版权所有 蜀ICP备06015925号-1</p></div>
+		<div class='contat2'><img src="img/last.png" alt="" /></div>
+	</div>
+	</body>
+</html>

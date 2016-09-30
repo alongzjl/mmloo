@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input{ border:none; }
+img{display: block;}
+ul li{list-style:none;}
+body{font-family:"微软雅黑"}
+a{text-decoration:none;}
+
+
+/*backg  beigin*/
+.backg{width:100%;height:420px;background:#f8f8f8;overflow:hidden;position:relative;}
+	/*backg中左侧的商品那一栏div  beigin*/
+	.backgr .backgrl{width: 210px;height:420px;float:left;background:#2c2c2c
+	url(../img/backgrl.png) no-repeat left top;position:relative;z-index:10;}
+		.backgrl .backgoods{height:420px;width:210px;}
+			.backgoods .myli {height:53px;width:210px;position:relative;}
+				.myli .goodsa{display:block;height:53px;width:210px;
+					line-height:53px;text-align:center;color:white;font-size:15px;}
+				.myli .goodslist{position:absolute;left:210px;top:0;width:722px;
+				padding:20px;background:white;display:none;}
+				.myli .goodslist p img{display:inline;}
+					.myli .goodslist .phone1{width:350px;float:left;margin-top:20px;}
+						.goodslist .phone1 div{float:left;height:13px;width:80px}
+							.goodslist .phone1 div a{color:black;font-size:13px;
+							font-weight:bolder;}
+						.goodslist .phone1 ul{float:left;width:270px;}
+							.goodslist .phone1 ul li{float:left;}
+								.goodslist .phone1 ul li a{color:black;font-size:13px;
+						border-left:1px solid #CDCDCD;padding:0 10px; }
+	/*backg中间轮播图那一栏div  beigin*/
+	.backgr .backgrc{height: 420px;width: 762px;float:left;position:relative;z-index:0;} 
+			.backgrc .backgrcleft{position:absolute;left:20px;top:180px;opacity:0.6;
+			filter:alpha(opacity=60);display:none;}
+			.backgrc .backgrcright{position:absolute;right:20px;top:180px;opacity:0.6;
+			filter:alpha(opacity=60);display:none;}
+		.backgrc .backgrct{height: 420px;width: 8280px;position:absolute;
+			left:-322px;;top:0;}
+			.backgrc .backgrct li{height: 420px;width: 1380px;float:left;}
+			.backgrc .backgrct li a{height: 420px;width: 762px;display:block;margin-left:332px;}
+			/*下面列表的设置*/
+		.backgrc .backgrcb{height:40px;width:762px;position:absolute;left:0;bottom:0;}
+			.backgrc .backgrcb li{float:left;height:40px;width:126px;
+			border-right:1px solid white;}
+			.backgrc .backgrcb li a{display:block;color:white;height:40px;line-height:40px;
+			width:126px;text-align:center;font-size:12px;
+			background:black;opacity:0.2;filter:alpha(opacity=20);}
+			
+	/*backg中右侧的登录那一栏div  beigin*/
+	.backgr .backgrr{height: 420px;width:228px;float:right;position:relative;z-index:10;
+		border-bottom:solid  1px #cdcdcd;background:#fff;}
+		.backgrr .backgrrt{height:54px;width:228px;border-bottom:dashed  1px #cdcdcd;
+		background: url(../img/backgrrt.png) no-repeat top left;padding-top:16px;}
+			.backgrrt p{font-size:12px;margin-left:78px;}
+			#backp{margin-top:10px;}
+		.backgrr .backgrrc{height: 40px;width:228px;border-bottom:1px #cdcdcd solid;}
+		.backgrr .backgrrc11{height: 40px;width:228px;border-bottom:1px #cdcdcd solid;background:green;
+		text-align:center;line-height:40px;color:red;}
+			.backgrrc a{display:block;height:40px;width:112px;float:left;font-size:12px;
+			border-right:1px #cdcdcd solid;text-align:center;line-height:40px;color:black;}
+			#backgrrca{border:none;}
+		.backgrr .backgrrc1{width:228px;height:80px;}
+			.backgrrc1 a{font-size:12px;width:218px;height:40px;line-height:40px;
+			display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
+			color:black;padding-left:10px;}
+		.backgrr .backgrrc2{width:228px;height:90px;}
+			.backgrrc2 li{float:left;width:74px;height:88px;border:1px #cdcdcd solid;}
+				.backgrrc2 li a{width:74px;height:88px;display:block;position:relative;}
+					.backgrrc2 li a .backgrrc2t{width:24px;height:31px;position:absolute;left:24px;top:18px;}
+					.backgrrc2 li a .backgrrc2b{position:absolute;left:16px;top:50px;font-size:12px;color:black;
+					width:45px;text-align:center;}
+/*backg  over*/
+
+
+/*商品展示一栏  start*/
+.showgoods{width:100%;height: 182px;background:#f8f8f8;margin-top:10px;}
+	.showgoods .showgoodsul li{float:left;height:182px;border-right:1px solid #ddd;}
+	#showgoodsfirst{width:208px;background:url(../img/showgood1.png) no-repeat top center;}
+/*商品展示一栏  over*/
+
+/*cheapbox特价区一栏  start*/
+.cheapbox{width:100%;background:#f8f8f8;}
+.cheapbox .cheapbox1{background:white;height:532px;padding-top:30px;}
+	/*cheapbox 左边列表一栏*/
+	.cheapboxl{height:532px;width:278px;float:left;padding:0 36px;}
+		.cheapboxl h2{margin-bottom:10px;font-weight:normal;}
+		.cheapboxl .cheaph2{margin-top:16px;}
+		.cheapboxl  .cheapboxlt{border-top:1px dashed #999;background:url(../img/cheapbig.png) no-repeat top left;padding-left:45px;}
+			.cheapboxl  .cheapboxlt li{margin-top:11px;}
+			.cheapboxl  .cheapboxlt li a{font-size:12px;color:black;}
+		.cheapboxl  .cheapboxlb{border-top:1px dashed #999;}
+			.cheapboxl  .cheapboxlb li{margin-top:12px;}
+			.cheapboxl  .cheapboxlb li span{font-size:12px;}
+			.cheapboxl  .cheapboxlb li a{font-size:12px;color:black;}
+	/*cheapbox 右边图片展示一栏*/
+	.cheapboxr{height:532px;width:850px;float:left;}
+		.cheapboxr .cheapboxrt li{height:316px;float:left;}
+		.cheapboxr .cheapboxrb li{float:left;}
+/*cheapbox特价区一栏  over*/
+
+/*大图片插图一栏  start*/
+.bigimg{width:100%;background:#f8f8f8;height:91px;}
+	.bigimg .bigimg1 {height:84px;padding-top:19px}
+/*大图片插图一栏  over*/
+
+/*商品楼梯模块第一栏  start*/
+.louti1{width:100%;background:#f8f8f8;height:702px;padding-top:13px;}
+	.louti1 .officegoods{height:642px;background:white;width:1200px;}
+		/*楼梯  企业办公区最上面文字那一行的样式  start*/
+		.officegoodsnav{height:36px;width:1200px;border-bottom:3px solid #4595c6;}
+			.officegoodsnav h2{float:left;}
+			.officegoodsnav .officenavr{float:right;}
+			.officegoodsnav .officenavc{float:right;height:36px;}
+				.officenavc li{float:left;height:36px;width:100px;}
+				.officenavc li a{color:black;display:block;width:100px;text-align:center;height:36px;
+				line-height:36px;font-size:15px;}
+		/*楼梯  企业办公区左边部分  start*/	
+		.officegoodsl{height:590px;width:225px;float:left;
+			border-bottom:1px solid #CDCDCD;
+			border-right:1px solid #CDCDCD;
+			border-left:1px solid #CDCDCD;}
+			.officegoodsl .officegoodslt{height:440px;width:225px;
+			border-bottom:1px solid #CDCDCD;
+			background:url(../img/officelt.fw.png) no-repeat top left;}
+				.officegoodsl .officegoodslt ul{width:160px;margin:0 46px 0;}
+				.officegoodsl .officegoodslt ul li{float:left;width:80px;}
+				.officegoodsl .officegoodslt ul li a{font-size:12px;
+					margin-bottom:9px;color:black;}
+			.officegoodsl .officegoodslb{height:150px;width:225px;position:relative;
+			overflow:hidden;}
+				/*轮播向左翻滚  start*/
+				.officegoodslb .officeleft{height:60px;width:28px;position:absolute;
+				left:0;top:40px}
+					.officegoodslb .officeleft a{height:60px;width:28px;display:block;
+					background:url(../img/officeleft.png) no-repeat right top;}
+				/*轮播向右翻滚  start*/
+				.officegoodslb .officeright{height:60px;width:28px;position:absolute;
+				right:0;top:40px}	
+					.officegoodslb .officeright a{height:60px;width:28px;display:block;
+					background:url(../img/officeright.png) no-repeat left top;}
+				/*轮播列表  start*/
+				.officegoodslb ul{position:absolute;left:38px;top:0;width:150px;
+				height:450px;}
+					.officegoodslb ul li{width:150px;height:49px;
+					border-top:1px solid #CDCDCD;}
+						.officegoodslb ul li a{width:150px;height:49px;display:block;}
+						
+		/*楼梯  企业办公区右边部分  start*/				
+		.officegoodsr{height:590px;width:970px;float:left;}
+		
+			/*楼梯  企业办公区右边部分第一部分商品推荐那一栏  start*/
+			.officegoodsr .officegoodsrlist{height:590px;width:970px;
+				border-bottom:1px solid #CDCDCD;}
+			.officegoodsr .officegoodsr1{float:left;width: 390px;height:358px;}
+			/*楼梯  企业办公区右边部分第一个ul  start*/
+			
+				/*楼梯  企业办公区右边部分第一个ul里面的轮播  样式 start*/
+				.officegoodsr1 .officeol{height:174px;width:389px;
+				position:relative;float:left;overflow:hidden;
+					border:1px solid #CDCDCD;}
+					.officegoodsr1 .officeol .officeolleft{height:60px;width:28px;
+					position:absolute;left:0;top:50px;z-index:5;}
+					.officegoodsr1 .officeol .officeolleft a{height:60px;width:27px;
+					display:block;background:url(../img/officeleft.png) no-repeat right top;}
+				/*轮播向右翻滚  start*/
+				.officegoodsr1 .officeol .officeolright{height:60px;width:28px;
+				position:absolute;right:0;top:50px;z-index:5;}	
+					.officegoodsr1 .officeol .officeolright a{height:60px;width:28px;
+					display:block;background:url(../img/officeright.png) no-repeat right top;}
+					
+					.officegoodsr1 .officeol ol{height:174px;width:2334px;
+					position:absolute;left:0;top:0;}
+						.officegoodsr1 .officeol ol li{float:left;height:174px;width:389px;}
+				.officegoodsr1 .officeul{float:left;	border-right:1px solid #CDCDCD;}
+				
+			/*楼梯  企业办公区右边部分第二个ul  start*/	
+			.officegoodsr .officegoodsr2{float:left;width: 580px;height:358px;}
+				 .officegoodsr2 .officegoodsr21{float:left;border-right:1px solid #CDCDCD;
+				 border-bottom:1px solid #CDCDCD;}
+				 
+				 #goodsr{float:right;width:188px;height:358px;overflow:hidden;}
+				 #goodsr h3{height:32px;margin-top:16px;font-size:14px;width:188px;
+				 text-align:center;line-height:32px;}
+					#goodsr ul li p{text-align:right;line-height:35px;font-size:12px;}
+				 	#goodsr ul li dl {height:110px;width:188px;display:none;}
+				 	#goodsr ul li .goodsrfirst{display:block;}
+				 		#goodsr ul li dl dt{float:left;height:110px;width:93px;}
+				 			#goodsr ul li dl dt img{width:93px;height:83px;margin-top:5px;}
+				 		#goodsr ul li dl dd{width:85px;height:110px;float:right;}
+				 			#goodsr ul li dl dd h4{font-weight:normal;font-size:12px;
+				 			margin-top:35px;margin-left:5px;color:black;}
+				 			#goodsr ul li dl dd h5{font-weight:normal;font-size:12px;
+				 			margin-top:10px;margin-left:15px;color:#de6b2c;}
+				 /*楼梯  企业办公区右边部分第三个ul  start*/
+			.officegoodsr .officegoodsr3{float;left;}
+				.officegoodsr3 li{float:left;width:194px;height:228px;
+				border-top:1px solid #CDCDCD;position:relative;
+				border-right:1px solid #CDCDCD;}
+				#officelastli{border-right:none;width:190px;}
+					.officegoodsr3 li a img{width:150px;height:150px;position:absolute;
+					left:15px;top:10px;}
+				.officegoodsr3 li a p{font-size:13px;color:black;margin-top:160px;
+				margin-bottom:6px;text-align:center;}
+				.officegoodsr3 li h4{font-size:13px;color:red;font-weight:bolder;
+				margin-left:35px;}
+					.officegoodsr3 li h4 span{color:#999999;font-size:11px;
+					text-decoration:line-through;}
+			/*楼梯  企业办公区右边部分第一部分商品推荐那一栏  over*/
+			
+			/*楼梯  企业办公区右边部分第二部分  办公文具  那一栏  start*/
+			
+			/*楼梯  企业办公区右边部分第二部分  办公文具  那一栏  over*/
+			
+			/*楼梯  企业办公区右边部分第三部分  办公文具  那一栏  start*/
+			
+			/*楼梯  企业办公区右边部分第三部分  办公文具  那一栏  over*/
+			
+			/*楼梯  企业办公区右边部分第四部分  办公文具  那一栏  start*/
+			
+			/*楼梯  企业办公区右边部分第四部分  办公文具  那一栏  over*/	
+			
+					
+ /*最下面的图片商品展示区样式  start*/
+.imgshow{height:530px;}
+	.imgshow ul{height:341px;width:1200px;margin-bottom:45px;}
+		.imgshow h2{margin:15px 0;font-weight:normal;}
+			.imgshow h2 span{height:25px;display:block;width:1100px;float:right;
+		border-bottom:1px dashed #999999;}
+		.imgshow ul li{float:left;margin-right:15px;}
+		#imgshowlast{margin-right:0;}
+		
+
+	/*footer   start*/		
+	.footer{height:123px;width:1200px;}
+	.footer ul{margin-bottom:10px;border-bottom:1px solid #CDCDCD;}
+		.footer ul li{margin-top:10px;float:left;}
+			.footer ul li a{padding:0 7px;font-size:12px;color:black;}
+	/*footer   over*/	
+	
